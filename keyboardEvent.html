@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+
+<body>
+    <h1>Click here</h1>
+    <script>
+        document.addEventListener("keydown", (e) => {
+            console.log(e.keyCode)
+            console.log(e.key)
+            console.log(e.code)
+            console.log(e.shiftKey)
+            if (e.keyCode == 27) {
+                console.log(document.getElementsByTagName('h1')[0].style.color = 'red')
+            }
+            else if (e.keyCode == 13) {
+                console.log(document.getElementsByTagName('h1')[0].style.color = 'green')
+            }
+        })
+    </script>
+</body>
+
+</html>
